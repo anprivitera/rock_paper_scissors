@@ -10,30 +10,24 @@ def clear():
 
 rock = {
   "name": "rock",
-  "abbreviation": "R",
   "vs_paper": "You lose!",
   "vs_scissors": "You win!",
 }
 
 paper = {
   "name": "paper",
-  "abbreviation": "P",
   "vs_scissors": "You lose!",
   "vs_rock": "You win!",
 }
 
 scissors = {
   "name": "scissors",
-  "abbreviation": "S",
   "vs_rock": "You lose!",
   "vs_paper": "You win!",
 }
 
 starting_move = {
   "name": "",
-  "abbreviation": "",
-  "vs_scissors": "",
-  "vs_rock": "",
 }
 
 moves = [rock, paper, scissors]
@@ -63,7 +57,7 @@ while play_again == "y" or play_again == "Y":
     time.sleep(0.5)
     print("         Paper!")
     time.sleep(0.5)
-    print("                 Scissors!")
+    print("                     Scissors!")
     time.sleep(1)
     clear()
     computer_move = random.choice(moves)
