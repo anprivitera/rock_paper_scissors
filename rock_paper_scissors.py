@@ -82,7 +82,7 @@ while play_again == "y" or play_again == "Y":
         lost += 1
     elif "win" in result_to_print:
         won += 1
-    elif "win" in result_to_print:
+    elif "drawn" in result_to_print:
         drawn += 1
     time.sleep(0.8)
     print("You lost {} times, won {} times and drawn {} times.".format(lost, won, drawn))
